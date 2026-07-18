@@ -1,0 +1,43 @@
+**✅Bubble sort:**
+
+Bubble sort is a simple,comparision -based sorting algorithm that arranges a list of elements by repeatedly comparing adjecent pairs
+and swapping them if they are in wrong order.
+
+**✅How it works:**
+
+1. Compare adjecent pairs: Start at the beginning of the list and compare the first two elements.
+
+2. Swap if out of order: If you are sorting in ascending order and the first element is largeer than the second, swap them.
+
+3. Move forward: Move to the next pair of elements and repeat the comparision.
+
+4. Complete the pass: Continiue until you reach the end of the un-sorted portion of the list. By the end of the first pass, the largest
+   element will have 'bubbled-up' to its correct final position at the very end.
+
+5. Repeat : Repeat the entire process for the remaining unsorted elements until a full pass occurs without a single swap, indicating the
+   list is completely sorted.
+
+**✅Example:-    [5,1,4]**
+
+*First Pass :-
+
+compare 5 and 1, 5>1, swap them - [1,5,4].
+compare 5 and 4. 5>4, swap them - [1,4,5].
+
+Result :- The largest element (5) has bubbled to the end.
+
+*Second Pass:-
+
+compare 1 and 4. They are in the correct order so no swap.
+
+Result :- The algorithm finishes the pass with no swaps, meaning the array is successfully sorted.
+
+
+**✅Core Technical Characteristics:-**
+
+*Time Complexity : It has a worst case and average time complexity of O(n^2) due to its nested loops, making it highly inefficient for large 
+                   datasets. When optimized with swaptracking flag,its best-case time complexity is O(n) of the data is already sorted.
+
+*Space Complexity : It is an in-place algorithm of O(1), requiring no extra memory storage to complete the sort.
+
+*Stability : It is a stable sorting algorithm, meaning elements with equal values retain their orignal relative order.
