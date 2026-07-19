@@ -1,0 +1,29 @@
+**🍵Selection Sort :-**
+
+Selection Sort is a simple, comparison-based sorting algorithm that sorts an array by repeatedly finding the minimum element from the unsorted portion and swapping it with the first element of that unsorted portion.
+
+The algorithm conceptually divides the array into two segments: a sorted subarray built from left to right, and a remaining unsorted subarray
+
+**🍵How It Works**
+
+Find Minimum: Scan the unsorted part of the list to locate the smallest value.
+
+Swap Element: Swap this smallest value with the leftmost element of the unsorted section.
+
+Shift Boundary: Move the imaginary boundary separating the sorted and unsorted sections one step to the right.
+
+Repeat: Continue these steps until the entire array is fully sorted.
+
+**🍵Performance and Complexity**
+
+Time Complexity: O(n^2) for best, average, and worst cases because it uses nested loops to scan the remaining array regardless of its initial order.
+
+Space Complexity: O(1) auxiliary space because it sorts the items directly. It is a strict in-place algorithm.
+
+Stability: Unstable, meaning it can alter the original relative order of duplicate elements during swapping operations.
+
+**🍵Core Advantages and Disadvantages**
+
+Pro: Performs a minimal number of memory writes. It makes a maximum of O(n)swaps, making it highly efficient when write operations are physically costly.
+
+Con: Highly inefficient on large datasets compared to advanced algorithms like Quick Sort or Merge Sort
